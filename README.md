@@ -13,7 +13,11 @@ This script takes the means and standard deviations of the features of the UCI H
 4. Cleans up descriptive feature names which were initially added in step 1. Now, gsub is used to remove periods, duplicated words, and add some "CamelCase" capitalization for readability.
 5. Gathers up all features into one column and adds a new column with averages (means) of each subject/activity/feature using tidyr's gather() dplyr's group_by() and summarize().
 
-### Note about tidy data format
-The assignment description says that either long or wide form is acceptible, and I chose the long form. The resulting table is 11880 x 4. The same data in the wide format would be 180 x 68.
+### Note about tidy data
+  I chose the long form because the assignment description says that either long or wide form is acceptible. Further, the course TA clarified that "The wide or narrow form is tidy," and what is tidy depends on the problem being solved ( first post in https://class.coursera.org/getdata-010/forum/thread?thread_id=49 ) See also: https://class.coursera.org/getdata-010/forum/thread?thread_id=241
+  The resulting table is 11880 x 4. The same data in the wide format would be 180 x 68. 
+  The long form enables us to use a descriptive column name ("average") to describe the nature of the value. For a table in the wide format, with only features as variable names, we must either add "mean" or "average" to every column name or make people guess from a file name, external information, or the like.
+  Getting the wide version would require only a slight change in the script with the removal of gather() and switching summarize() to summarize_each().
 
-### Note about feature names
+## Reproducing this analysis
+To reproduce the results of this analysis, run the script run_analysis.R (no parameters) with the folder "UCI HAR Dataset" in your working directory.
