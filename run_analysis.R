@@ -49,6 +49,6 @@ run_analysis <- function() {
             summarize(average = mean(value))
       
       
-      write.table(data.averages, file = "dataset.txt", row.names = FALSE)
+      write.table(data.averages, file = "tidy_dataset.txt", row.names = FALSE)
       
 }
