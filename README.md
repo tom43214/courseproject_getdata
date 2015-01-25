@@ -18,7 +18,7 @@ This script takes the means and standard deviations of the features of the UCI H
 * An example of a long-form tidy data set similar to this one can be found on page 4 of Hadley Wickham's paper on tidy data at http://vita.had.co.nz/papers/tidy-data.pdf
 * The resulting table is 11880 x 4. The same data in the wide format would be 180 x 68. 
 * The long form enables us to use a descriptive column name ("average") to describe the nature of the value. For a table in the wide format, with only features as variable names, we must either add "mean" or "average" to every column name or make people guess from a file name, external information, or the like.
-* Getting the wide version would require only a slight change in the script with the removal of gather() and switching summarize() to summarize_each().
+* Getting the wide version would require only a slight change in the script with the removal of gather() and switching summarize() to summarise_each().
 
 ### Note about feature names
 * As noted above, names were left in abbreviated forms for the sake of conciseness/readability and consistency with original data.
