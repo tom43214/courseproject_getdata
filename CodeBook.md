@@ -18,5 +18,5 @@ Variable  | Description
 ||Std: standard deviation
 ||
 |
-| average | Number denoting mean value of a feature of a subject and activity
+| average | Denotes mean value of a feature of a subject and activity
 ||Values are unitless because they are based on figures normalized to range of -1 to 1
