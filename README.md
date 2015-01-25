@@ -23,5 +23,6 @@ This script takes the means and standard deviations of the features of the UCI H
 ### Note about feature names
 * As noted above, names were left in abbreviated forms for the sake of conciseness/readability and consistency with original data.
 * More detailed description can be found in CodeBook.md as well as in the original dataset documentation
+
 ## Reproducing this analysis
 To reproduce the results of this analysis, run the script run_analysis.R (no parameters) with the folder "UCI HAR Dataset" in your working directory.
